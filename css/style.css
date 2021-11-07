@@ -1,0 +1,293 @@
+/* Esto resetea css */
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8ebdf;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+/* Mobile */
+/*TESTEANDO*/
+@media only screen and (max-width: 600px) {
+  .index {
+    grid-template-areas:
+      "elHeader muestraDeFotografias"
+      "elFooter";
+        }
+  }
+
+@media only screen and (max-width: 1024px) {
+  .index {
+    grid-template-areas:
+      "elHeader muestraDeFotografias"
+      "elFooter";
+        }
+    }
+
+  
+
+/* Mobile */
+
+/*Menú Navegación*/
+
+li {
+    display: inline;
+    margin: 15px;
+    list-style-type: none;
+}
+
+nav {
+    padding-top: 2%;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(64, 63, 156);
+}
+
+/*Tamaño de imagenes y animación Zoom*/
+.imagenesLandscape {
+    width: 350px;
+    transition: all 300ms;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagenesLandscape:hover{
+    transform: scale(1.15);
+}
+
+.imagenesPortraits {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.imagenesPortraits:hover{
+  transform: scale(1.15);
+}
+
+/*Flexbox*/
+.fotografiaLandscape{
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:unset;
+    align-content:flex-start;
+  }
+  
+  .item0 {
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+  }
+        
+  .item1 {
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+  }
+        
+  .item2 {
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+  }
+        
+  .item3 {
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+  }
+        
+  .item-4 {
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+  }
+/*Flexbox*/
+
+/*Titulos*/
+
+.titulos {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.titulos:hover {
+  color: rgb(64, 63, 156);
+}
+
+/*GRID*/
+
+.index {
+    display: grid;
+    grid-template-columns: 2.3fr;
+    grid-template-rows: 0.4fr 4.0fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "elHeader"
+      "muestraDeFotografias"
+      "elFooter";
+    }
+
+
+.muestraDeFotografias { 
+    grid-area: muestraDeFotografias; 
+    }
+    
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.9fr 1.2fr; 
+    grid-template-rows: 0.4fr 4.0fr 0.3fr; 
+    gap: 5px 10px; 
+    grid-template-areas: 
+      "elHeader elHeader"
+      "formulario aboutMe"
+      "elFooter elFooter"; 
+  }
+  
+.formulario { 
+      grid-area: formulario; 
+    }
+  
+.aboutMe { 
+      grid-area: aboutMe; 
+    }
+  
+.elFooter { 
+      grid-area: elFooter;
+      color: rgb(0, 0, 0);
+      text-decoration: none; 
+    }
+
+.elFooter:hover {
+    color: rgb(64, 63, 156);
+}
+  
+.elHeader {
+  display: grid; 
+  grid-template-columns: 2.4fr; 
+  grid-template-rows: 0.8fr 0.3fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "logoTitulo"
+    "navegación"; 
+  grid-area: elHeader; 
+}
+  
+.navegación { 
+      grid-area: navegación; 
+      text-align: center;
+    }
+  
+.logoTitulo { 
+    grid-area: logoTitulo; 
+    padding-top: 10px;
+    font-family: 'Ephesis', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    }
+
+.logoTitulo:hover {
+        color: rgb(64, 63, 156);
+    }
+
+/*GRID*/
+
+/*footer*/
+.itemFooter {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.contenedorFooter {
+    /*background-color: black;
+    color: rgb(250, 229, 232);*/
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+/*footer*/
+
+/*formulario*/
+form {
+    padding: 10px;
+    max-width: 400px;
+    background-color: #E7E7E7;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    border: none; 
+    color: #525c66; 
+    font-size: 1em;
+    resize: horizontal; 
+}
+
+form button {
+  display: block;
+	background-color: #0095eb;
+	padding: 10px 25px 10px 25px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+    }
+
+form button:hover {
+	background-color: #046193;
+    }
+    
+textarea { 
+    resize: none; 
+    }
+/*formulario*/
+
+
+/*Caja aboutMe*/
+.caja {
+    background-color: #E7E7E7;
+    width: 100%;/* ancho*/
+    height: 200px;/* alto */
+    padding: 10px;
+ }
+
+
+
+
+

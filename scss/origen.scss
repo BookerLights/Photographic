@@ -1,0 +1,15 @@
+/* Esto es un comentario de CSS puro */
+
+ul {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    li{
+        font-size: 16px;
+        list-style-type: none;
+        a{
+            color: aquamarine;
+            text-decoration: none;
+        }
+    }
+}
